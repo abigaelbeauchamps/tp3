@@ -1,0 +1,259 @@
+     * {
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #1a0540, #2d0a5e, #8f109c);
+            min-height: 100vh;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        .barre-laterale {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 120px;
+            height: 100vh;
+            background: linear-gradient(to bottom, #000000, #1a0540);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px 0;
+            gap: 40px;
+            z-index: 100;
+        }
+
+        .barre-laterale-logo {
+            width: 80px;
+            height: auto;
+        }
+
+        .contenue-principale {
+            margin-left: 120px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            padding: 30px 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .navigation {
+            background: white;
+            padding: 8px 15px;
+            border-radius: 50px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            display: flex;
+            gap: 5px;
+        }
+
+        .boutton-navigation{
+            padding: 12px 35px;
+            border-radius: 50px;
+            border: none;
+            background: transparent;
+            color: #000000;
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.3s;
+            font-weight: 600;
+            position: relative;
+        }
+
+        .boutton-navigation::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 1px;
+            height: 30px;
+            background: #ddd;
+        }
+
+        .boutton-navigation:last-child::after {
+            display: none;
+        }
+
+        .boutton-navigation.active {
+            background: linear-gradient(135deg, #1a0540 0%, #2d0a5e 100%);
+            color: white;
+        }
+
+        .boutton-navigation:hover:not(.active) {
+            background: rgba(74, 26, 107, 0.1);
+        }
+
+        .inscription {
+            background: white;
+            padding: 8px 15px;
+            border-radius: 50px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            display: flex;
+            gap: 5px;
+        }
+
+        .boutton-inscription {
+            padding: 12px 35px;
+            border-radius: 50px;
+            border: none;
+            background: transparent;
+            color: #000000;
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.3s;
+            font-weight: 600;
+            position: relative;
+        }
+
+        .boutton-inscription::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 1px;
+            height: 30px;
+            background: #ddd;
+        }
+
+        .boutton-inscription:last-child::after {
+            display: none;
+        }
+
+        .boutton-inscription.primary {
+            background: linear-gradient(135deg, #4a1a6b 0%, #6b2d8f 100%);
+            color: white;
+        }
+
+        .boutton-inscription:hover {
+            transform: translateY(-2px);
+        }
+
+        .section-principale {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 60px;
+            gap: 80px;
+        }
+
+        .image-logo {
+            flex: 1;
+            max-width: 500px;
+        }
+
+        .image-logo img {
+            width: 100%;
+            height: auto;
+            filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.5));
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .boite-de-texte {
+            flex: 1;
+            max-width: 550px;
+            background: white;
+            border-radius: 30px;
+            padding: 60px 50px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        .texte {
+            position: relative;
+            z-index: 10;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .texte h1 {
+            font-size: 42px;
+            line-height: 1.4;
+            color: #1a0b2e;
+            font-weight: bold;
+        }
+
+        footer {
+            background: rgba(182, 79, 187, 0.8);
+            padding: 30px 40px;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            backdrop-filter: blur(10px);
+            border-radius: 40px;
+            margin: 0 140px 30px 140px;
+        }
+
+        .boutton-sociale {
+            width: 60px;
+            height: 60px;
+            border-radius: 15px;
+            background: #000000;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+            font-size: 28px;
+            color: white;
+        }
+
+        .boutton-sociale:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        @media (max-width: 1200px) {
+            .section-principale {
+                flex-direction: column;
+                padding: 40px;
+            }
+
+            .product-image {
+                max-width: 400px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .barre-laterale {
+                width: 80px;
+            }
+
+            .contenue-principale {
+                margin-left: 80px;
+            }
+
+            header {
+                flex-direction: column;
+                padding: 20px;
+            }
+
+            .boutton-navigation, .boutton-inscription {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+
+            footer {
+                margin: 0 20px 20px 20px;
+            }
+        }

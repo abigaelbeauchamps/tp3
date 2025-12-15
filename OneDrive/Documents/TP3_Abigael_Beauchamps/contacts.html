@@ -4,234 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <style>
-    *  {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-body {
-    background: linear-gradient(#1a024b, #390269,#8f109c);
-    min-height: 100vh;
-}
-
-/* NAVBAR */
-.bar-de-navigation {
-    position: relative;
-    display: flex;
-    align-items: center;
-    padding: 15px 40px;
-    margin-bottom: 40px;
-}
-
-.logo img {
-    height: 30px;
-}
-
-.navigation {
-    background: white;
-    border-radius: 30px;
-    padding: 5px;
-    display: flex;
-    gap: 5px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-bottom: 40px
-}
-
-.navigation a {
-    padding: 8px 20px;
-    border-radius: 25px;
-    text-decoration: none;
-    color: black;
-    font-weight: 500;
-}
-
-.navigation a.acceuil {
-    background: #2b0a3d;
-    color: white;
-}
-
-.bouttons a {
-    margin-left: 10px;
-    padding: 8px 18px;
-    border-radius: 20px;
-    text-decoration: none;
-}
-
-.boutton-outline {
-    background: white;
-    color: black;
-}
-
-.boutton-solid {
-    background: #2b0a3d;
-    color: white;
-}
-
-.footer {
-    text-align: center;
-    padding: 40px;
-    background: none;
-    margin-top: auto;
- }
-
-.footer i {
-    margin: 0 10px;
-    font-size: 22px;
-}
-
-.bas-de-bordure{
-    background: #b64fbb;
-    padding: 30px 500px;
-    border-radius: 60px;
-    gap: 45px;
-    align-items: flex-start;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-    margin-bottom: 50px
-}
-.bas-de-bordure i{
-    font-size: 30px;
-    color: black;
-}
-
-/* MAIN CARD */
-.container {
-    background: white;
-    margin: 70px auto;
-    padding: 168px 100px;
-    width: 100%;
-    max-width: 1440px;
-    border-radius: 25px;
-    margin-top: 5px;
-}
-
-.pill {
-    display: inline-block;
-    background: #3b0a63;
-    color: white;
-    padding: 6px 20px;
-    border-radius: 20px;
-    margin-bottom: 20px;
-}
-
-/* CONTENT */
-.content {
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
-}
-
-.left, .right {
-    width: 50%;
-}
-
-h2 {
-    margin-bottom: 10px;
-}
-
-ul {
-    margin-top: 10px;
-}
-
-ul li {
-    margin-bottom: 8px;
-}
-
-/* MAP */
-.map {
-    margin-top: 15px;
-    border-radius: 15px;
-    overflow: hidden;
-    height: 250px;
-}
-
-.map iframe {
-    width: 100%;
-    height: 100%;
-    border: 0;
-}
-
-/* FOOTER */
-.footer {
-    margin-top: 40px;
-    padding: 20px 40px;
-}
-
-.socials span {
-    margin-right: 15px;
-    background: black;
-    color: white;
-    padding: 6px 10px;
-    border-radius: 50%;
-}
-.logo img {
-    height: 90px;   /* try 50px if you want it bigger */
-    width: auto;
-    border-radius: 7px;
-
-        }
-    </style>
+<link rel="stylesheet" href="styleContact.css">
 </head>
 <body>
-    <header class="bar-de-navigation">
-    <div class="logo">
-        <img src="84900db70061bb103abc58ee666908cf1dc74656.png" class="logo-rog" alt="ASUS">
-    </div>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="84900db70061bb103abc58ee666908cf1dc74656.png" alt="Republic of Gamers Logo">
+            </div>
+            
+            <div class="nav-container">
+                <nav>
+                    <button class="nav-btn">Accueil</button>
+                    <button class="nav-btn">À Propos</button>
+                    <button class="nav-btn active">Contact</button>
+                </nav>
+            </div>
 
-    <nav class="navigation">
-        <a href="#">Accueil</a>
-        <a href="#">À Propos</a>
-        <a href="#" class="acceuil">Contact</a>
-    </nav>
+            <div class="auth-btns">
+                <button class="auth-btn">Connexion</button>
+                <button class="auth-btn primary">Inscription</button>
+            </div>
+        </header>
 
-    <div class="bouttons">
-        <a href="#" class="boutton-outline">Connexion</a>
-        <a href="#" class="boutton-solid">Inscription</a>
-    </div>
-</header>
+        <div class="content">
+            <div class="section-title">Contact</div>
 
-<main class="container">
-    <span class="pill">Contact</span>
+            <div class="contact-container">
+                <div class="contact-section">
+                    <h2>Avez-vous des problèmes?</h2>
+                    <p>Vous pouvez nous rejoindre en ligne par:</p>
+                    <ul>
+                        <li>Numéro de téléphone: (905) 370-2787</li>
+                        <li>Fax: (905) 489-2718</li>
+                        <li>Notre Site: https://www.asus.com/ca-en/support/</li>
+                    </ul>
+                </div>
 
-    <div class="content">
-        <div class="left">
-            <h2>Avez-vous des problèmes?</h2>
-            <p>Vous pouvez nous rejoindre en ligne par :</p>
-            <ul>
-                <li>Numéro de Téléphone: (905) 370-2787</li>
-                <li>Fax: (905) 489-2718</li>
-                <li>Notre Site: <a href="#">https://www.asus.com/ca-en/support/</a></li>
-            </ul>
-        </div>
-
-        <div class="right">
-            <h2>Proche de chez-vous?</h2>
-            <p>Vous pouvez aussi nous rejoindre en personne:</p>
-            <p>• 70 Gough Road Markham, Ontario L3R 0E9 Canada</p>
-
-            <div class="map">
-                <iframe
-                src="https://www.google.com/maps?q=70%20Gough%20Road%20Markham%20Ontario&output=embed"
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
+                <div class="contact-section">
+                    <h2>Proche de chez-nous?</h2>
+                    <p>Vous pouvez aussi nous rejoindre en personne:</p>
+                    <ul>
+                        <li>70 Gough Road Markham, Ontario L3R 0E9 Canada</li>
+                    </ul>
+                    
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2879.8446891234567!2d-79.3389!3d43.8547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDPCsDUxJzE2LjkiTiA3OcKwMjAnMjAuMCJX!5e0!3m2!1sen!2sca!4v1234567890123!5m2!1sen!2sca"
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</main>
 
-<div class="footer">
-        <div class="bas-de-bordure">
-        <i class="fab fa-facebook-f"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-linkedin-in"></i>
-        <i class="fab fa-x-twitter"></i>
+        <footer>
+            <button class="social-btn" onclick="window.open('https://facebook.com', '_blank')">f</button>
+            <button class="social-btn" onclick="window.open('https://instagram.com', '_blank')">📷</button>
+            <button class="social-btn" onclick="window.open('https://linkedin.com', '_blank')">in</button>
+            <button class="social-btn" onclick="window.open('https://twitter.com', '_blank')">𝕏</button>
+        </footer>
     </div>
-    </div>
-
 </body>
 </html>

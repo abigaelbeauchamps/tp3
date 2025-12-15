@@ -3,200 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleIndex.css">
     <title>Acceuil</title>
-
-    <style>
-        body {
-            margin: 0;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            font-family: Arial, Helvetica, sans-serif;
-            background: linear-gradient(#1a024b, #390269,#8f109c);
-            color: white;
-        }
-
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 40px;
-        }
-
-        .logo img {
-            display: block;
-            margin-bottom: 5px;
-        }
-        .logo-rog {
-            height: 55px;
-            border-radius: 5px;
-        }
-        .logo-asus {
-            height: 30px;
-        }
-        .bordure {
-            display: flex;
-            justify-content: center;
-        }
-        .haut-bordure {
-            background: white;
-            padding: 20px 10px;
-            display: flex;
-            justify-content: center;
-            padding-left: 70px;
-            align-items: center;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            border-radius: 100px;
-            max-width: 700px;
-            height: 30px;
-            margin-top: 20px;
-        }
-        .navigation {
-            display: flex;
-            justify-content: center; 
-            gap: 10px;
-            margin-right: 40px;
-        }
-        .navigation a {
-            text-decoration: none;
-            color: black;
-            background: #f0f0f0;
-            padding: 10px 22px;
-            border-radius: 30px;
-            font-size: 16px;
-            font-weight: bold;
-        }
-        .navigation a:hover {
-            background: #ddd;
-        }
-        .navigation .acceuil {
-            background: rgb(243, 243, 243);
-            color: black;
-        }
-        .banner-pricipale{
-            flex: 1;
-            flex-wrap: wrap;
-            display: flex;
-            padding: 40px 60px;
-            align-items: center;
-            justify-content: flex-start;
-            gap: 300px
-        }
-        .navigation .inscription {
-            background: #d8b6ff;
-            color: black;
-        }
-        .image-carte-graphique{
-            width: 600px;
-            margin-left: 55px;
-            max-width: 100%;
-            filter: drop-shadow(0 10px 25px rgba(0,0,0,0.7));
-        }
-        .zone-de-texte {
-            background: white;
-            color: rgba(0,0,0,0.35);
-            padding: 180px 120px;
-            border-radius: 100px;
-            border: 3px solid #ffffff;
-            max-width: 350px;
-            margin-left: 90px
-        }
-        .zone-de-texte h1 {
-            margin: 0;
-            margin-top: 5px;
-            font-size: 50px;
-            line-height: 1.3;
-            color: black;
-        }    
-        .zone-de-texte p{
-            font-size: 20px;
-            margin-bottom: 5px;
-            color: black;
-        }
-        .footer {
-            text-align: center;
-            padding: 40px;
-            background: none;
-            margin-top: auto;
-        }
-        .footer i {
-            margin: 0 10px;
-            font-size: 22px;
-        }
-        .bas-de-bordure {
-            background: #b64fbb;
-            padding: 30px 500px;
-            border-radius: 70px;
-            display: inline-flex;
-            gap: 45px;
-            align-items: center;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-        }
-        .bas-de-bordure i {
-            font-size: 30px;
-            color: black;
-        }
-        .bordure-gauche {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 120px;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.6);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding-top: 30px;
-            z-index: 10;
-        }
-
-       @media (max-width: 800px) {
-        .banner-pricipale {
-            flex-direction: column-reverse;
-            text-align: center;
-            padding: 20px;
-        }
-        .zone-de-texte{
-            margin-bottom: 30px;
-        }
-       }
-    </style>
-
 </head>
 <body>
-    <div class="bordure-gauche">
-    <img src="84900db70061bb103abc58ee666908cf1dc74656.png" class="logo-rog" alt="ROG Logo">
+    <div class="barre-laterale">
+        <img src="84900db70061bb103abc58ee666908cf1dc74656.png" alt="ROG Logo" class="barre-laterale-logo">
+        <img src="54a0325016a6b9021b91f70f5d0f865f0486e7e9.png" alt="ASUS Logo" class="barre-laterale-logo">
     </div>
 
-    <div class="bordure">
-        <div class="haut-bordure">
+    <div class="contenue-principale">
+        <header>
             <div class="navigation">
-            <a href="#" class="acceuil">Accueil</a>
-            <a href="#">À Propos</a>
-            <a href="#">Contact</a>
-            <a href="#">Connexion</a>
-            <a href="#" class="inscription">Inscription</a>
+                <button class="boutton-navigation active" onclick="window.open('file:///C:/Users/Mogna%20Poulard/OneDrive/Documents/TP3_Abigael_Beauchamps/index.html', '')">Accueil</button>
+                <button class="boutton-navigation" onclick="window.open('file:///C:/Users/Mogna%20Poulard/OneDrive/Documents/TP3_Abigael_Beauchamps/apropos.html', '')">À Propos</button>
+                <button class="boutton-navigation" onclick="window.open('file:///C:/Users/Mogna%20Poulard/OneDrive/Documents/TP3_Abigael_Beauchamps/contacts.html', '')">Contact</button>
+            </div>
+
+            <div class="inscription">
+                <button class="boutton-inscription">Connexion</button>
+                <button class="boutton-inscription primary">Inscription</button>
+            </div>
+        </header>
+
+        <div class="section-principale">
+            <div class="image-logo">
+                <img src="5716044261be3819a6d23944cac42aa638266870.png" width='500' height='600'>
+             </div>
+
+            <div class="boite-de-texte">
+                <div class="texte">
+                    <h1>La plus puissante carte graphique: ASUS ROG Astral GeForce RTX 5090</h1>
+                </div>
             </div>
         </div>
-    </div>
-    
-    <div class="banner-pricipale">
-         <img src="5716044261be3819a6d23944cac42aa638266870.png" class="image-carte-graphique" alt="RTX 5090">
 
-        <div class="zone-de-texte">
-            <p>La plus puissante carte graphique :</p>
-            <h1>ASUS ROG Astral<br>GeForce RTX 5090</h1>
-        </div>
+        <footer>
+            <button class="boutton-sociale" onclick="window.open('https://facebook.com', '_blank')"><img src="facebook logo.jpg" width="40px"></button>
+            <button class="boutton-sociale" onclick="window.open('https://instagram.com', '_blank')"> <img src="insta logo.jpg"width="40px"> </button>
+            <button class="boutton-sociale" onclick="window.open('https://linkedin.com', '_blank')"><img src="linkedin logo.jpg"width="40px"></button>
+            <button class="boutton-sociale" onclick="window.open('https://twitter.com', '_blank')"><img src="twitter logo.jpg" width="40px"></button>
+        </footer>
     </div>
 
-    <div class="footer">
-        <div class="bas-de-bordure">
-        <i class="fab fa-facebook-f"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-linkedin-in"></i>
-        <i class="fab fa-x-twitter"></i>
-    </div>
-    </div>
-<a href=""> test</a>
+    <script>
+        // Navigation buttons functionality
+        document.querySelectorAll('.boutton-navigation').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.boutton-navigation').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+        // Auth buttons functionality
+        document.querySelectorAll('.boutton-inscription').forEach(btn => {
+            btn.addEventListener('click', function() {
+                alert('Fonctionnalité ' + this.textContent + ' à venir!');
+            });
+        });
+
+        // Add smooth scroll behavior
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>

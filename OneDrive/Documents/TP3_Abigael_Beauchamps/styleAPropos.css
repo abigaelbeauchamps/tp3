@@ -14,7 +14,7 @@
             flex-direction: column;
         }
 
-        .container {
+        .conteneur-principale {
             width: 100%;
             max-width: 100%;
             height: 100vh;
@@ -32,7 +32,7 @@
             position: relative;
         }
 
-        .nav-container {
+        .navigation-conteneur {
             position: absolute;
             left: 50%;
             transform: translateX(-50%);
@@ -47,7 +47,7 @@
             gap: 5px;
         }
 
-        .nav-btn {
+        .boutton-navigation {
             padding: 10px 25px;
             border-radius: 25px;
             border: none;
@@ -58,26 +58,26 @@
             font-weight: 600;
         }
 
-        .nav-btn.active {
+        .boutton-navigation.active {
             background: linear-gradient(135deg, #4a1a6b 0%, #6b2d8f 100%);
             color: white !important;
             font-weight: 600;
         }
 
-        .nav-btn:hover {
+        .boutton-navigation:hover {
             background: rgba(74, 26, 107, 0.1);
         }
 
-        .nav-btn.active:hover {
+        .boutton-navigation.active:hover {
             background: linear-gradient(135deg, #4a1a6b 0%, #6b2d8f 100%);
         }
 
-        .auth-btns {
+        .boutton-inscriptions {
             display: flex;
             gap: 10px;
         }
 
-        .auth-btn {
+        .boutton-inscription {
             padding: 10px 25px;
             border-radius: 25px;
             border: 2px solid #4a1a6b;
@@ -88,13 +88,13 @@
             font-weight: 600;
         }
 
-        .auth-btn.primary {
+        .boutton-inscription.primary {
             background: linear-gradient(135deg, #4a1a6b 0%, #6b2d8f 100%);
             color: white;
             font-weight: 600;
         }
 
-        .auth-btn:hover {
+        .boutton-inscription:hover {
             transform: translateY(-2px);
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
@@ -116,53 +116,51 @@
             gap: 10px;
         }
 
-        .nav-btn {
+        .boutton-navigation {
             padding: 10px 25px;
             border-radius: 25px;
             border: 2px solid white;
             background: transparent;
-            color: white;
             cursor: pointer;
             font-size: 14px;
             transition: all 0.3s;
         }
 
-        .nav-btn.active {
+        .boutton-navigation.active {
             background: linear-gradient(135deg, #4a1a6b 0%, #6b2d8f 100%);
             border-color: #6b2d8f;
         }
 
-        .nav-btn:hover {
+        .boutton-navigation:hover {
             background: rgba(255, 255, 255, 0.1);
         }
 
-        .auth-btns {
+        .boutton-inscriptions {
             display: flex;
             gap: 10px;
         }
 
-        .auth-btn {
+        .boutton-inscription {
             padding: 10px 25px;
             border-radius: 25px;
             border: 2px solid #4a1a6b;
-            background: white;
             color: #4a1a6b;
             cursor: pointer;
             font-size: 14px;
             transition: all 0.3s;
         }
 
-        .auth-btn.primary {
+        .boutton-inscription.primary {
             background: linear-gradient(135deg, #4a1a6b 0%, #6b2d8f 100%);
             color: white;
         }
 
-        .auth-btn:hover {
+        .boutton-inscription:hover {
             transform: translateY(-2px);
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
 
-        .content {
+        .contenue {
             padding: 40px 60px;
             flex: 1;
             background: white;
@@ -171,7 +169,7 @@
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
         }
 
-        .section-title {
+        .sous-titre {
             background: linear-gradient(135deg, #4a1a6b 0%, #6b2d8f 100%);
             color: white;
             padding: 15px 30px;
@@ -207,13 +205,13 @@
             list-style: disc;
         }
 
-        .team-section h2 {
+        .dirigeants h2 {
             color: #1a0b2e;
             margin-bottom: 30px;
             font-size: 20px;
         }
 
-        .team-grid {
+        .dirigeants-grid {
             display: flex;
             gap: 30px;
             margin-top: 20px;
@@ -221,12 +219,12 @@
             flex-wrap: wrap;
         }
 
-        .team-member {
+        .membres {
             text-align: center;
             width: 280px;
         }
 
-        .member-photo {
+        .photo-membres {
             width: 100%;
             aspect-ratio: 1;
             background: #e0e0e0;
@@ -235,13 +233,13 @@
             overflow: hidden;
         }
 
-        .member-photo img {
+        .photo-membres img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
 
-        .member-name {
+        .nom-membres {
             color: #1a0b2e;
             font-weight: 600;
             font-size: 16px;
@@ -258,11 +256,11 @@
             margin: 0 20px 20px 20px;
         }
 
-        .social-btn {
+        .boutton-sociale {
             width: 45px;
             height: 45px;
             border-radius: 10px;
-            background: white;
+            background: black;
             border: none;
             cursor: pointer;
             display: flex;
@@ -273,13 +271,13 @@
             color: #1a0b2e;
         }
 
-        .social-btn:hover {
+        .boutton-sociale:hover {
             transform: translateY(-3px);
             box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
         }
 
         @media (max-width: 768px) {
-            .team-grid {
+            .dirigeants-grid {
                 grid-template-columns: 1fr;
             }
 

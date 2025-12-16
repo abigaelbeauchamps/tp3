@@ -15,9 +15,9 @@
     <div class="contenue-principale">
         <header>
             <div class="navigation">
-                <button class="boutton-navigation active" onclick="window.open('file:///C:/Users/Mogna%20Poulard/OneDrive/Documents/TP3_Abigael_Beauchamps/index.html', '')">Accueil</button>
-                <button class="boutton-navigation" onclick="window.open('file:///C:/Users/Mogna%20Poulard/OneDrive/Documents/TP3_Abigael_Beauchamps/apropos.html', '')">À Propos</button>
-                <button class="boutton-navigation" onclick="window.open('file:///C:/Users/Mogna%20Poulard/OneDrive/Documents/TP3_Abigael_Beauchamps/contacts.html', '')">Contact</button>
+                <button class="boutton-navigation active" onclick="window.open('file:///C:/Users/Mogna%20Poulard/OneDrive/Documents/TP3_Abigael_Beauchamps/index.html')">Accueil</button>
+                <button class="boutton-navigation" onclick="window.open('file:///C:/Users/Mogna%20Poulard/OneDrive/Documents/TP3_Abigael_Beauchamps/apropos.html')">À Propos</button>
+                <button class="boutton-navigation" onclick="window.open('file:///C:/Users/Mogna%20Poulard/OneDrive/Documents/TP3_Abigael_Beauchamps/contacts.html')">Contact</button>
             </div>
 
             <div class="inscription">
@@ -32,6 +32,13 @@
              </div>
 
             <div class="boite-de-texte">
+                <div class="video-yt">
+                      <iframe src="https://www.youtube.com/embed/QQpF-q6G4pE" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                    </iframe>
+                </div>
                 <div class="texte">
                     <h1>La plus puissante carte graphique: ASUS ROG Astral GeForce RTX 5090</h1>
                 </div>
@@ -52,8 +59,16 @@
             btn.addEventListener('click', function() {
                 document.querySelectorAll('.boutton-navigation').forEach(b => b.classList.remove('active'));
                 this.classList.add('active');
+                 if (buttonText === 'Accueil') {
+                    window.location.href = 'file:///C:/Users/Mogna%20Poulard/OneDrive/Documents/TP3_Abigael_Beauchamps/index.html';
+                } else if (buttonText === 'À Propos') {
+                    window.location.href = 'file:///C:/Users/Mogna%20Poulard/OneDrive/Documents/TP3_Abigael_Beauchamps/apropos.html';
+                } else if (buttonText === 'Contact') {
+                    window.location.href = 'file:///C:/Users/Mogna%20Poulard/OneDrive/Documents/TP3_Abigael_Beauchamps/contacts.html';
+                }
             });
         });
+        
 
         // Auth buttons functionality
         document.querySelectorAll('.boutton-inscription').forEach(btn => {

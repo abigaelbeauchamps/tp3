@@ -12,7 +12,7 @@
         <img src="54a0325016a6b9021b91f70f5d0f865f0486e7e9.png" alt="ASUS Logo" class="barre-laterale-logo">
     </div>
 
-    <div class="contenue-principale">
+    <div class="contenue-principale"> 
         <header>
             <div class="navigation">
                 <button class="boutton-navigation active" onclick="window.open('file:///C:/Users/Mogna%20Poulard/OneDrive/Documents/TP3_Abigael_Beauchamps/index.html')">Accueil</button>
@@ -54,39 +54,10 @@
     </div>
 
     <script>
-        // Navigation buttons functionality
-        document.querySelectorAll('.boutton-navigation').forEach(btn => {
-            btn.addEventListener('click', function() {
-                document.querySelectorAll('.boutton-navigation').forEach(b => b.classList.remove('active'));
-                this.classList.add('active');
-                 if (buttonText === 'Accueil') {
-                    window.location.href = 'file:///C:/Users/Mogna%20Poulard/OneDrive/Documents/TP3_Abigael_Beauchamps/index.html';
-                } else if (buttonText === 'À Propos') {
-                    window.location.href = 'file:///C:/Users/Mogna%20Poulard/OneDrive/Documents/TP3_Abigael_Beauchamps/apropos.html';
-                } else if (buttonText === 'Contact') {
-                    window.location.href = 'file:///C:/Users/Mogna%20Poulard/OneDrive/Documents/TP3_Abigael_Beauchamps/contacts.html';
-                }
-            });
-        });
-        
-
-        // Auth buttons functionality
+        //affiche une alerte temporaire sur les boutons qui n'ont pas encore de fonctionaliter
         document.querySelectorAll('.boutton-inscription').forEach(btn => {
             btn.addEventListener('click', function() {
-                alert('Fonctionnalité ' + this.textContent + ' à venir!');
-            });
-        });
-
-        // Add smooth scroll behavior
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                }
+                alert('Fonctionnalité ' + this.textContent + ' à venir');
             });
         });
     </script>

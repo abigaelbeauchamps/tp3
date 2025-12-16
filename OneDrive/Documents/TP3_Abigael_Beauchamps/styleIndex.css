@@ -2,7 +2,7 @@
             padding: 0;
             box-sizing: border-box;
         }
-
+        /* corps de la page */
         body {
             font-family: Arial, sans-serif;
             background: linear-gradient(to bottom, #1a0540, #2d0a5e, #8f109c);
@@ -10,7 +10,7 @@
             margin: 0;
             overflow-x: hidden;
         }
-
+        /* barre noire à la gauche */
         .barre-laterale {
             position: fixed;
             left: 0;
@@ -25,7 +25,7 @@
             gap: 2px;
             z-index: 100;
         }
-
+        /* le logo qui va sur la barre noire*/
         .barre-laterale-logo {
             width: 100px;
             height: auto;
@@ -45,7 +45,7 @@
             align-items: center;
             gap: 30px;
         }
-
+    /* la barre ou il y a plusieurs bouttons pour naviger autour des pages du site web */
         .navigation {
             background: white;
             padding: 8px 15px;
@@ -113,7 +113,7 @@
             font-weight: 600;
             position: relative;
         }
-
+/* barre mince qui sépare les boutton acceuil, a propos et contacts*/
         .boutton-inscription::after {
             content: '';
             position: absolute;
@@ -124,7 +124,7 @@
             height: 30px;
             background: #ddd;
         }
-
+ /* enpeche que la barre mince apparaient à droite de contact */
         .boutton-inscription:last-child::after {
             display: none;
         }
@@ -207,7 +207,7 @@
             color: #1a0b2e;
             font-weight: bold;
         }
-
+ /* la barre où il y a les liens des medias sociaux */
         footer {
             background: rgba(182, 79, 187, 0.8);
             padding: 30px 40px;
@@ -218,7 +218,7 @@
             border-radius: 40px;
             margin: 0 140px 30px 140px;
         }
-
+        /* icon sociale */
         .boutton-sociale {
             width: 60px;
             height: 60px;
@@ -237,39 +237,4 @@
         .boutton-sociale:hover {
             transform: translateY(-5px);
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-        }
-
-        @media (max-width: 1200px) {
-            .section-principale {
-                flex-direction: column;
-                padding: 40px;
-            }
-
-            .product-image {
-                max-width: 400px;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .barre-laterale {
-                width: 80px;
-            }
-
-            .contenue-principale {
-                margin-left: 80px;
-            }
-
-            header {
-                flex-direction: column;
-                padding: 20px;
-            }
-
-            .boutton-navigation, .boutton-inscription {
-                padding: 10px 20px;
-                font-size: 14px;
-            }
-
-            footer {
-                margin: 0 20px 20px 20px;
-            }
         }

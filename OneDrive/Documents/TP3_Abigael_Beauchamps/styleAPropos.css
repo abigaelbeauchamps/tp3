@@ -159,7 +159,7 @@
             transform: translateY(-2px);
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
-
+/* contenue de la page a propos*/
         .contenue {
             padding: 40px 60px;
             flex: 1;
@@ -178,7 +178,7 @@
             font-size: 18px;
             margin-bottom: 30px;
         }
-
+/* met en place les objectives comme dans la maquette Figma*/
         .objectives {
             margin-bottom: 40px;
         }
@@ -218,7 +218,7 @@
             justify-content: center;
             flex-wrap: wrap;
         }
-
+/* photo et nom des dirigeants / membres de l'équipe ASUS / ROG*/
         .membres {
             text-align: center;
             width: 280px;
@@ -274,19 +274,4 @@
         .boutton-sociale:hover {
             transform: translateY(-3px);
             box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
-        }
-
-        @media (max-width: 768px) {
-            .dirigeants-grid {
-                grid-template-columns: 1fr;
-            }
-
-            nav {
-                flex-wrap: wrap;
-            }
-
-            header {
-                flex-direction: column;
-                gap: 15px;
-            }
         }

@@ -112,7 +112,7 @@ nav {
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
-
+/* la grande boite blanche qui couvre une bonne partie de la page qui montre les contenue du site*/
 .contenue {
     padding: 40px 60px;
     flex: 1;
@@ -121,7 +121,7 @@ nav {
     border-radius: 30px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
-
+/* sous-titre du nom de la page*/
 .sous-titre {
     background: linear-gradient(135deg, #4a1a6b 0%, #6b2d8f 100%);
     color: white;
@@ -131,7 +131,7 @@ nav {
     font-size: 18px;
     margin-bottom: 40px;
 }
-
+/* les affaires a écrire et a seprarer pour ressembler a celui de la maquette Figma */
 .contenue-contact {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -177,7 +177,7 @@ nav {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
 }
-
+/* format de la carte google dans la page du site*/
 .carte-google iframe {
     width: 100%;
     height: 100%;
@@ -213,25 +213,4 @@ footer {
 .boutton-sociale :hover {
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
-}
-
-@media (max-width: 768px) {
-    .contenue-contact {
-        grid-template-columns: 1fr;
-    }
-
-    nav {
-        flex-wrap: wrap;
-    }
-
-    header {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .navigation-conteneur {
-        position: static;
-        transform: none;
-        margin: 15px 0;
-    }
 }
